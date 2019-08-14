@@ -39,3 +39,9 @@ and a SSE probability of 0.9 for item side.
 python3 main.py --maxlen=200 --dropout_rate 0.2 --threshold_user 0.08 --threshold_item 0.9
 ```
 
+## Results
+The following is the plot of NDCG@10 versus training time (Seconds) for SASRec, SSE-PT and SSE-PT++. Our proposed SSE-PT and SSE-PT++ outperform SASRec.
+<p align="center">
+  <img width="600" src="ml1m_speed.png">
+</p>
+
