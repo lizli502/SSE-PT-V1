@@ -10,23 +10,23 @@ and the item. For every user, their interactions were sorted by timestamp.
 ## Options
 The training of the SSE-PT model is handled by the main.py script that provides the following command line arguments.
 ```
---dataset            STR           Name of dataset.           Default is "steam".
---train_dir          STR                                      Default is "default".
---batch_size         INT           Batch size.                Default is 128.    
---lr                 FLOAT         Learning rate.             Default is 0.001.
---maxlen             INT                                      Default is 50.
---user_hidden_units  INT           Default is 50.
---item_hidden_units  INT           Default is 50.
---num_blocks         INT           Number of blocks.          Default is 2.
---num_epochs         INT           Number of epochs to run.   Default is 201.
---num_heads          INT           Number of heads.           Default is 2.
---dropout_rate       FLOAT         Dropout rate value.        Default is 0.5.
---threshold_user     FLOAT         SSE probability of user.   Default is 1.0.
---threshold_item     FLOAT         SSE probability of item.   Default is 1.0.
---l2_emb             FLOAT         L2 regularization value.   Default is 0.0.
---gpu                FLOAT                                    Default is 0.
---print_freq         INT                                      Default is 10.
---k                  INT           Top k for NDCG and Hits.   Default is 10.
+--dataset            STR           Name of dataset.               Default is "steam".
+--train_dir          STR           Train directory.               Default is "default".
+--batch_size         INT           Batch size.                    Default is 128.    
+--lr                 FLOAT         Learning rate.                 Default is 0.001.
+--maxlen             INT           Maxmum length of sequence.     Default is 50.
+--user_hidden_units  INT           Hidden units of user.          Default is 50.
+--item_hidden_units  INT           Hidden units of item.          Default is 50.
+--num_blocks         INT           Number of blocks.              Default is 2.
+--num_epochs         INT           Number of epochs to run.       Default is 201.
+--num_heads          INT           Number of heads.               Default is 2.
+--dropout_rate       FLOAT         Dropout rate value.            Default is 0.5.
+--threshold_user     FLOAT         SSE probability of user.       Default is 1.0.
+--threshold_item     FLOAT         SSE probability of item.       Default is 1.0.
+--l2_emb             FLOAT         L2 regularization value.       Default is 0.0.
+--gpu                INT           Name of GPU to use.            Default is 0.
+--print_freq         INT           Print frequency of evaluation. Default is 10.
+--k                  INT           Top k for NDCG and Hits.       Default is 10.
 ```
 ## Commands
 To train our model on the default `ml1m` data with default parameters:
