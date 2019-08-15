@@ -18,8 +18,8 @@ The training of the SSE-PT model is handled by the main.py script that provides 
 --user_hidden_units  INT           Hidden units of user.          Default is 50.
 --item_hidden_units  INT           Hidden units of item.          Default is 50.
 --num_blocks         INT           Number of blocks.              Default is 2.
---num_epochs         INT           Number of epochs to run.       Default is 201.
---num_heads          INT           Number of heads.               Default is 2.
+--num_epochs         INT           Number of epochs to run.       Default is 2001.
+--num_heads          INT           Number of heads.               Default is 1.
 --dropout_rate       FLOAT         Dropout rate value.            Default is 0.5.
 --threshold_user     FLOAT         SSE probability of user.       Default is 1.0.
 --threshold_item     FLOAT         SSE probability of item.       Default is 1.0.
