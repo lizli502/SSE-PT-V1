@@ -10,7 +10,7 @@ and the item. For every user, their interactions were sorted by timestamp.
 ## Options
 The training of the SSE-PT model is handled by the main.py script that provides the following command line arguments.
 ```
---dataset            STR           Name of dataset.               Default is "steam".
+--dataset            STR           Name of dataset.               Default is "ml1m".
 --train_dir          STR           Train directory.               Default is "default".
 --batch_size         INT           Batch size.                    Default is 128.    
 --lr                 FLOAT         Learning rate.                 Default is 0.001.
